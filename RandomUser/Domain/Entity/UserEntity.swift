@@ -7,80 +7,67 @@
 
 import Foundation
 
-// MARK: - Response
-struct Response {
-    let results: [User]
-    let info: Info
-}
-
-// MARK: - Info
-struct Info {
-    let seed: String
-    let results, page: Int
-    let version: String
-}
-
 // MARK: - User
-struct User {
+struct UserEntity {
     let gender: String
-    let name: Name
-    let location: Location
+    let name: NameEntity
+    let location: LocationEntity
     let email: String
-    let login: Login
-    let dob, registered: Dob
+    let login: LoginEntity
+    let dob, registered: DobEntity
     let phone, cell: String
-    let id: ID
-    let picture: Picture
+    let id: IDEntity
+    let picture: PictureEntity
     let nat: String
 }
 
 // MARK: - Dob
-struct Dob {
+struct DobEntity {
     let date: String
     let age: Int
 }
 
-// MARK: - ID
-struct ID {
+// MARK: - IDEntity
+struct IDEntity {
     let name, value: String
 }
 
-// MARK: - Location
-struct Location {
-    let street: Street
+// MARK: - LocationEntity
+struct LocationEntity {
+    let street: StreetEntity
     let city, state, country, postcode: String
-    let coordinates: Coordinates
-    let timezone: Timezone
+    let coordinates: CoordinatesEntity
+    let timezone: TimezoneEntity
 }
 
-// MARK: - Coordinates
-struct Coordinates {
+// MARK: - CoordinatesEntity
+struct CoordinatesEntity {
     let latitude, longitude: String
 }
 
-// MARK: - Street
-struct Street {
+// MARK: - StreetEntity
+struct StreetEntity {
     let number: Int
     let name: String
 }
 
-// MARK: - Timezone
-struct Timezone {
+// MARK: - TimezoneEntity
+struct TimezoneEntity {
     let offset, description: String
 }
 
-// MARK: - Login
-struct Login {
+// MARK: - LoginEntity
+struct LoginEntity {
     let uuid, username, password, salt: String
     let md5, sha1, sha256: String
 }
 
-// MARK: - Name
-struct Name {
+// MARK: - NameEntity
+struct NameEntity {
     let title, first, last: String
 }
 
-// MARK: - Picture
-struct Picture {
+// MARK: - PictureEntity
+struct PictureEntity {
     let large, medium, thumbnail: String
 }
