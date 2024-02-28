@@ -1,4 +1,83 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithCloudKit="false" userDefinedModelVersionIdentifier="">
-    <elements/>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="22522" systemVersion="23C71" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="CDCoordinatesDto" representedClassName="CDCoordinatesDto" syncable="YES">
+        <attribute name="latitude" optional="YES" attributeType="String"/>
+        <attribute name="longitude" optional="YES" attributeType="String"/>
+        <relationship name="location" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CDLocationDto" inverseName="coordinate" inverseEntity="CDLocationDto"/>
+    </entity>
+    <entity name="CDDobDto" representedClassName="CDDobDto" syncable="YES">
+        <attribute name="age" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="date" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <relationship name="user" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CDUserDto" inverseName="dob" inverseEntity="CDUserDto"/>
+    </entity>
+    <entity name="CDIdDto" representedClassName="CDIdDto" syncable="YES">
+        <attribute name="idName" optional="YES" attributeType="String"/>
+        <attribute name="idValue" optional="YES" attributeType="String"/>
+        <relationship name="user" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CDUserDto" inverseName="id" inverseEntity="CDUserDto"/>
+    </entity>
+    <entity name="CDLocationDto" representedClassName="CDLocationDto" syncable="YES">
+        <attribute name="city" optional="YES" attributeType="String"/>
+        <attribute name="country" optional="YES" attributeType="String"/>
+        <attribute name="postcode" optional="YES" attributeType="String"/>
+        <attribute name="state" optional="YES" attributeType="String"/>
+        <relationship name="coordinate" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CDCoordinatesDto" inverseName="location" inverseEntity="CDCoordinatesDto"/>
+        <relationship name="street" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CDStreetDto" inverseName="location" inverseEntity="CDStreetDto"/>
+        <relationship name="time" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CDTimeDto" inverseName="location" inverseEntity="CDTimeDto"/>
+        <relationship name="user" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CDUserDto" inverseName="location" inverseEntity="CDUserDto"/>
+    </entity>
+    <entity name="CDLoginDto" representedClassName="CDLoginDto" syncable="YES">
+        <attribute name="md5" optional="YES" attributeType="String"/>
+        <attribute name="password" optional="YES" attributeType="String"/>
+        <attribute name="salt" optional="YES" attributeType="String"/>
+        <attribute name="sha1" optional="YES" attributeType="String"/>
+        <attribute name="sha256" optional="YES" attributeType="String"/>
+        <attribute name="username" optional="YES" attributeType="String"/>
+        <attribute name="uuid" optional="YES" attributeType="String"/>
+        <relationship name="user" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CDUserDto" inverseName="login" inverseEntity="CDUserDto"/>
+    </entity>
+    <entity name="CDNameDto" representedClassName="CDNameDto" syncable="YES">
+        <attribute name="first" optional="YES" attributeType="String"/>
+        <attribute name="last" optional="YES" attributeType="String"/>
+        <attribute name="title" optional="YES" attributeType="String"/>
+        <relationship name="user" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CDUserDto" inverseName="name" inverseEntity="CDUserDto"/>
+    </entity>
+    <entity name="CDNationalityDto" representedClassName="CDNationalityDto" syncable="YES">
+        <attribute name="nat" optional="YES" attributeType="String"/>
+        <relationship name="user" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CDUserDto" inverseName="nationality" inverseEntity="CDUserDto"/>
+    </entity>
+    <entity name="CDPictureDto" representedClassName="CDPictureDto" syncable="YES">
+        <attribute name="largeURL" optional="YES" attributeType="String"/>
+        <attribute name="mediumURL" optional="YES" attributeType="String"/>
+        <attribute name="thumbnailURL" optional="YES" attributeType="String"/>
+        <relationship name="user" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CDPictureDto" inverseName="user" inverseEntity="CDPictureDto"/>
+    </entity>
+    <entity name="CdRegisteredDto" representedClassName="CdRegisteredDto" syncable="YES">
+        <attribute name="age" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="date" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <relationship name="user" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CDUserDto" inverseName="registered" inverseEntity="CDUserDto"/>
+    </entity>
+    <entity name="CDStreetDto" representedClassName="CDStreetDto" syncable="YES">
+        <attribute name="streetName" optional="YES" attributeType="String"/>
+        <attribute name="streetNumber" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="location" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CDLocationDto" inverseName="street" inverseEntity="CDLocationDto"/>
+    </entity>
+    <entity name="CDTimeDto" representedClassName="CDTimeDto" syncable="YES">
+        <attribute name="descriptions" optional="YES" attributeType="String"/>
+        <attribute name="offset" optional="YES" attributeType="String"/>
+        <relationship name="location" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CDLocationDto" inverseName="time" inverseEntity="CDLocationDto"/>
+    </entity>
+    <entity name="CDUserDto" representedClassName="CDUserDto" syncable="YES">
+        <attribute name="cell" optional="YES" attributeType="String"/>
+        <attribute name="email" optional="YES" attributeType="String"/>
+        <attribute name="gender" optional="YES" attributeType="String"/>
+        <attribute name="phone" optional="YES" attributeType="String"/>
+        <relationship name="dob" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="CDDobDto" inverseName="user" inverseEntity="CDDobDto"/>
+        <relationship name="id" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="CDIdDto" inverseName="user" inverseEntity="CDIdDto"/>
+        <relationship name="location" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="CDLocationDto" inverseName="user" inverseEntity="CDLocationDto"/>
+        <relationship name="login" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="CDLoginDto" inverseName="user" inverseEntity="CDLoginDto"/>
+        <relationship name="name" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="CDNameDto" inverseName="user" inverseEntity="CDNameDto"/>
+        <relationship name="nationality" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="CDNationalityDto" inverseName="user" inverseEntity="CDNationalityDto"/>
+        <relationship name="picture" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="CDPictureDto"/>
+        <relationship name="registered" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="CdRegisteredDto" inverseName="user" inverseEntity="CdRegisteredDto"/>
+    </entity>
 </model>

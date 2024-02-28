@@ -7,15 +7,70 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0790252F2B8EEB6500B36704 /* CDLocationDto+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0790251D2B8EEB6500B36704 /* CDLocationDto+CoreDataClass.swift */; };
+		079025302B8EEB6500B36704 /* CDLocationDto+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0790251E2B8EEB6500B36704 /* CDLocationDto+CoreDataProperties.swift */; };
+		079025312B8EEB6500B36704 /* CDLoginDto+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0790251F2B8EEB6500B36704 /* CDLoginDto+CoreDataClass.swift */; };
+		079025322B8EEB6500B36704 /* CDLoginDto+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079025202B8EEB6500B36704 /* CDLoginDto+CoreDataProperties.swift */; };
+		079025332B8EEB6500B36704 /* CDDobDto+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079025212B8EEB6500B36704 /* CDDobDto+CoreDataClass.swift */; };
+		079025342B8EEB6500B36704 /* CDDobDto+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079025222B8EEB6500B36704 /* CDDobDto+CoreDataProperties.swift */; };
+		079025352B8EEB6500B36704 /* CDNameDto+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079025232B8EEB6500B36704 /* CDNameDto+CoreDataClass.swift */; };
+		079025362B8EEB6500B36704 /* CDNameDto+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079025242B8EEB6500B36704 /* CDNameDto+CoreDataProperties.swift */; };
+		079025372B8EEB6500B36704 /* CDIdDto+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079025252B8EEB6500B36704 /* CDIdDto+CoreDataClass.swift */; };
+		079025382B8EEB6500B36704 /* CDIdDto+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079025262B8EEB6500B36704 /* CDIdDto+CoreDataProperties.swift */; };
+		079025392B8EEB6500B36704 /* CDNationalityDto+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079025272B8EEB6500B36704 /* CDNationalityDto+CoreDataClass.swift */; };
+		0790253A2B8EEB6500B36704 /* CDNationalityDto+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079025282B8EEB6500B36704 /* CDNationalityDto+CoreDataProperties.swift */; };
+		0790253B2B8EEB6500B36704 /* CDPictureDto+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079025292B8EEB6500B36704 /* CDPictureDto+CoreDataClass.swift */; };
+		0790253C2B8EEB6500B36704 /* CDPictureDto+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0790252A2B8EEB6500B36704 /* CDPictureDto+CoreDataProperties.swift */; };
+		0790253D2B8EEB6500B36704 /* CdRegisteredDto+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0790252B2B8EEB6500B36704 /* CdRegisteredDto+CoreDataClass.swift */; };
+		0790253E2B8EEB6500B36704 /* CdRegisteredDto+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0790252C2B8EEB6500B36704 /* CdRegisteredDto+CoreDataProperties.swift */; };
+		0790253F2B8EEB6500B36704 /* CDUserDto+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0790252D2B8EEB6500B36704 /* CDUserDto+CoreDataClass.swift */; };
+		079025402B8EEB6500B36704 /* CDUserDto+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0790252E2B8EEB6500B36704 /* CDUserDto+CoreDataProperties.swift */; };
+		079025432B8EF16E00B36704 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079025412B8EF16E00B36704 /* MainViewController.swift */; };
+		079025442B8EF16E00B36704 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 079025422B8EF16E00B36704 /* MainViewController.xib */; };
+		079025462B8EFA5900B36704 /* UserEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079025452B8EFA5900B36704 /* UserEntity.swift */; };
+		0790DFEE2B8F812A0050F5CD /* CDStreetDto+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0790DFEC2B8F812A0050F5CD /* CDStreetDto+CoreDataClass.swift */; };
+		0790DFEF2B8F812A0050F5CD /* CDStreetDto+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0790DFED2B8F812A0050F5CD /* CDStreetDto+CoreDataProperties.swift */; };
+		0790DFF22B8F82660050F5CD /* CDCoordinatesDto+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0790DFF02B8F82660050F5CD /* CDCoordinatesDto+CoreDataClass.swift */; };
+		0790DFF32B8F82660050F5CD /* CDCoordinatesDto+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0790DFF12B8F82660050F5CD /* CDCoordinatesDto+CoreDataProperties.swift */; };
+		0790DFF62B8F83B70050F5CD /* CDTimeDto+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0790DFF42B8F83B70050F5CD /* CDTimeDto+CoreDataClass.swift */; };
+		0790DFF72B8F83B70050F5CD /* CDTimeDto+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0790DFF52B8F83B70050F5CD /* CDTimeDto+CoreDataProperties.swift */; };
 		07DE79EC2B8EAEAC0088FAC4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DE79EB2B8EAEAC0088FAC4 /* AppDelegate.swift */; };
 		07DE79EE2B8EAEAC0088FAC4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DE79ED2B8EAEAC0088FAC4 /* SceneDelegate.swift */; };
 		07DE79F02B8EAEAC0088FAC4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DE79EF2B8EAEAC0088FAC4 /* ViewController.swift */; };
 		07DE79F62B8EAEAC0088FAC4 /* RandomUser.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 07DE79F42B8EAEAC0088FAC4 /* RandomUser.xcdatamodeld */; };
 		07DE79F82B8EAEAF0088FAC4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07DE79F72B8EAEAF0088FAC4 /* Assets.xcassets */; };
 		07DE79FB2B8EAEAF0088FAC4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07DE79F92B8EAEAF0088FAC4 /* LaunchScreen.storyboard */; };
+		07DE7A342B8ED8DA0088FAC4 /* ManageCoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DE7A332B8ED8DA0088FAC4 /* ManageCoreData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0790251D2B8EEB6500B36704 /* CDLocationDto+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CDLocationDto+CoreDataClass.swift"; sourceTree = "<group>"; };
+		0790251E2B8EEB6500B36704 /* CDLocationDto+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CDLocationDto+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		0790251F2B8EEB6500B36704 /* CDLoginDto+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CDLoginDto+CoreDataClass.swift"; sourceTree = "<group>"; };
+		079025202B8EEB6500B36704 /* CDLoginDto+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CDLoginDto+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		079025212B8EEB6500B36704 /* CDDobDto+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CDDobDto+CoreDataClass.swift"; sourceTree = "<group>"; };
+		079025222B8EEB6500B36704 /* CDDobDto+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CDDobDto+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		079025232B8EEB6500B36704 /* CDNameDto+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CDNameDto+CoreDataClass.swift"; sourceTree = "<group>"; };
+		079025242B8EEB6500B36704 /* CDNameDto+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CDNameDto+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		079025252B8EEB6500B36704 /* CDIdDto+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CDIdDto+CoreDataClass.swift"; sourceTree = "<group>"; };
+		079025262B8EEB6500B36704 /* CDIdDto+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CDIdDto+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		079025272B8EEB6500B36704 /* CDNationalityDto+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CDNationalityDto+CoreDataClass.swift"; sourceTree = "<group>"; };
+		079025282B8EEB6500B36704 /* CDNationalityDto+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CDNationalityDto+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		079025292B8EEB6500B36704 /* CDPictureDto+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CDPictureDto+CoreDataClass.swift"; sourceTree = "<group>"; };
+		0790252A2B8EEB6500B36704 /* CDPictureDto+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CDPictureDto+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		0790252B2B8EEB6500B36704 /* CdRegisteredDto+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CdRegisteredDto+CoreDataClass.swift"; sourceTree = "<group>"; };
+		0790252C2B8EEB6500B36704 /* CdRegisteredDto+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CdRegisteredDto+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		0790252D2B8EEB6500B36704 /* CDUserDto+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CDUserDto+CoreDataClass.swift"; sourceTree = "<group>"; };
+		0790252E2B8EEB6500B36704 /* CDUserDto+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CDUserDto+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		079025412B8EF16E00B36704 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		079025422B8EF16E00B36704 /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		079025452B8EFA5900B36704 /* UserEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserEntity.swift; sourceTree = "<group>"; };
+		0790DFEC2B8F812A0050F5CD /* CDStreetDto+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CDStreetDto+CoreDataClass.swift"; sourceTree = "<group>"; };
+		0790DFED2B8F812A0050F5CD /* CDStreetDto+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CDStreetDto+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		0790DFF02B8F82660050F5CD /* CDCoordinatesDto+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CDCoordinatesDto+CoreDataClass.swift"; sourceTree = "<group>"; };
+		0790DFF12B8F82660050F5CD /* CDCoordinatesDto+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CDCoordinatesDto+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		0790DFF42B8F83B70050F5CD /* CDTimeDto+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CDTimeDto+CoreDataClass.swift"; sourceTree = "<group>"; };
+		0790DFF52B8F83B70050F5CD /* CDTimeDto+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CDTimeDto+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		07DE79E82B8EAEAC0088FAC4 /* RandomUser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RandomUser.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		07DE79EB2B8EAEAC0088FAC4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		07DE79ED2B8EAEAC0088FAC4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +79,7 @@
 		07DE79F72B8EAEAF0088FAC4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		07DE79FA2B8EAEAF0088FAC4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		07DE79FC2B8EAEAF0088FAC4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		07DE7A332B8ED8DA0088FAC4 /* ManageCoreData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManageCoreData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +93,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0729A5EB2B8EE897004160FF /* CoreDataDto */ = {
+			isa = PBXGroup;
+			children = (
+				0790DFF42B8F83B70050F5CD /* CDTimeDto+CoreDataClass.swift */,
+				0790DFF52B8F83B70050F5CD /* CDTimeDto+CoreDataProperties.swift */,
+				0790DFF02B8F82660050F5CD /* CDCoordinatesDto+CoreDataClass.swift */,
+				0790DFF12B8F82660050F5CD /* CDCoordinatesDto+CoreDataProperties.swift */,
+				0790DFEC2B8F812A0050F5CD /* CDStreetDto+CoreDataClass.swift */,
+				0790DFED2B8F812A0050F5CD /* CDStreetDto+CoreDataProperties.swift */,
+				0790251D2B8EEB6500B36704 /* CDLocationDto+CoreDataClass.swift */,
+				0790251E2B8EEB6500B36704 /* CDLocationDto+CoreDataProperties.swift */,
+				0790251F2B8EEB6500B36704 /* CDLoginDto+CoreDataClass.swift */,
+				079025202B8EEB6500B36704 /* CDLoginDto+CoreDataProperties.swift */,
+				079025212B8EEB6500B36704 /* CDDobDto+CoreDataClass.swift */,
+				079025222B8EEB6500B36704 /* CDDobDto+CoreDataProperties.swift */,
+				079025232B8EEB6500B36704 /* CDNameDto+CoreDataClass.swift */,
+				079025242B8EEB6500B36704 /* CDNameDto+CoreDataProperties.swift */,
+				079025252B8EEB6500B36704 /* CDIdDto+CoreDataClass.swift */,
+				079025262B8EEB6500B36704 /* CDIdDto+CoreDataProperties.swift */,
+				079025272B8EEB6500B36704 /* CDNationalityDto+CoreDataClass.swift */,
+				079025282B8EEB6500B36704 /* CDNationalityDto+CoreDataProperties.swift */,
+				079025292B8EEB6500B36704 /* CDPictureDto+CoreDataClass.swift */,
+				0790252A2B8EEB6500B36704 /* CDPictureDto+CoreDataProperties.swift */,
+				0790252B2B8EEB6500B36704 /* CdRegisteredDto+CoreDataClass.swift */,
+				0790252C2B8EEB6500B36704 /* CdRegisteredDto+CoreDataProperties.swift */,
+				0790252E2B8EEB6500B36704 /* CDUserDto+CoreDataProperties.swift */,
+				0790252D2B8EEB6500B36704 /* CDUserDto+CoreDataClass.swift */,
+			);
+			path = CoreDataDto;
+			sourceTree = "<group>";
+		};
 		07DE79DF2B8EAEAC0088FAC4 = {
 			isa = PBXGroup;
 			children = (
@@ -79,6 +166,7 @@
 		07DE7A022B8EAF910088FAC4 /* Infraestructure */ = {
 			isa = PBXGroup;
 			children = (
+				07DE7A322B8ED8BA0088FAC4 /* CoreData */,
 				07DE7A0C2B8EB00A0088FAC4 /* Networking */,
 			);
 			path = Infraestructure;
@@ -173,6 +261,7 @@
 		07DE7A0E2B8EB0250088FAC4 /* Entity */ = {
 			isa = PBXGroup;
 			children = (
+				079025452B8EFA5900B36704 /* UserEntity.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -194,6 +283,7 @@
 		07DE7A112B8EB04F0088FAC4 /* Dtos */ = {
 			isa = PBXGroup;
 			children = (
+				0729A5EB2B8EE897004160FF /* CoreDataDto */,
 			);
 			path = Dtos;
 			sourceTree = "<group>";
@@ -250,6 +340,8 @@
 		07DE7A192B8EB0D30088FAC4 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				079025412B8EF16E00B36704 /* MainViewController.swift */,
+				079025422B8EF16E00B36704 /* MainViewController.xib */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -273,6 +365,14 @@
 			children = (
 			);
 			path = Protocols;
+			sourceTree = "<group>";
+		};
+		07DE7A322B8ED8BA0088FAC4 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				07DE7A332B8ED8DA0088FAC4 /* ManageCoreData.swift */,
+			);
+			path = CoreData;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -334,6 +434,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				07DE79FB2B8EAEAF0088FAC4 /* LaunchScreen.storyboard in Resources */,
+				079025442B8EF16E00B36704 /* MainViewController.xib in Resources */,
 				07DE79F82B8EAEAF0088FAC4 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -345,10 +446,37 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				079025342B8EEB6500B36704 /* CDDobDto+CoreDataProperties.swift in Sources */,
+				079025372B8EEB6500B36704 /* CDIdDto+CoreDataClass.swift in Sources */,
+				079025402B8EEB6500B36704 /* CDUserDto+CoreDataProperties.swift in Sources */,
 				07DE79F02B8EAEAC0088FAC4 /* ViewController.swift in Sources */,
+				0790253A2B8EEB6500B36704 /* CDNationalityDto+CoreDataProperties.swift in Sources */,
 				07DE79EC2B8EAEAC0088FAC4 /* AppDelegate.swift in Sources */,
 				07DE79EE2B8EAEAC0088FAC4 /* SceneDelegate.swift in Sources */,
+				0790DFF32B8F82660050F5CD /* CDCoordinatesDto+CoreDataProperties.swift in Sources */,
+				079025362B8EEB6500B36704 /* CDNameDto+CoreDataProperties.swift in Sources */,
+				0790253E2B8EEB6500B36704 /* CdRegisteredDto+CoreDataProperties.swift in Sources */,
+				079025382B8EEB6500B36704 /* CDIdDto+CoreDataProperties.swift in Sources */,
 				07DE79F62B8EAEAC0088FAC4 /* RandomUser.xcdatamodeld in Sources */,
+				079025312B8EEB6500B36704 /* CDLoginDto+CoreDataClass.swift in Sources */,
+				0790DFF62B8F83B70050F5CD /* CDTimeDto+CoreDataClass.swift in Sources */,
+				07DE7A342B8ED8DA0088FAC4 /* ManageCoreData.swift in Sources */,
+				079025352B8EEB6500B36704 /* CDNameDto+CoreDataClass.swift in Sources */,
+				0790253C2B8EEB6500B36704 /* CDPictureDto+CoreDataProperties.swift in Sources */,
+				079025432B8EF16E00B36704 /* MainViewController.swift in Sources */,
+				0790253B2B8EEB6500B36704 /* CDPictureDto+CoreDataClass.swift in Sources */,
+				0790DFEE2B8F812A0050F5CD /* CDStreetDto+CoreDataClass.swift in Sources */,
+				079025332B8EEB6500B36704 /* CDDobDto+CoreDataClass.swift in Sources */,
+				079025322B8EEB6500B36704 /* CDLoginDto+CoreDataProperties.swift in Sources */,
+				0790DFF22B8F82660050F5CD /* CDCoordinatesDto+CoreDataClass.swift in Sources */,
+				079025392B8EEB6500B36704 /* CDNationalityDto+CoreDataClass.swift in Sources */,
+				0790DFEF2B8F812A0050F5CD /* CDStreetDto+CoreDataProperties.swift in Sources */,
+				079025302B8EEB6500B36704 /* CDLocationDto+CoreDataProperties.swift in Sources */,
+				0790DFF72B8F83B70050F5CD /* CDTimeDto+CoreDataProperties.swift in Sources */,
+				0790253D2B8EEB6500B36704 /* CdRegisteredDto+CoreDataClass.swift in Sources */,
+				0790252F2B8EEB6500B36704 /* CDLocationDto+CoreDataClass.swift in Sources */,
+				079025462B8EFA5900B36704 /* UserEntity.swift in Sources */,
+				0790253F2B8EEB6500B36704 /* CDUserDto+CoreDataClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -497,7 +625,6 @@
 				INFOPLIST_FILE = RandomUser/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -525,7 +652,6 @@
 				INFOPLIST_FILE = RandomUser/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
