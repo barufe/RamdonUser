@@ -1,4 +1,79 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithCloudKit="false" userDefinedModelVersionIdentifier="">
-    <elements/>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="22522" systemVersion="23C71" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="CDCoordinatesDto" representedClassName="CDCoordinatesDto" syncable="YES">
+        <attribute name="latitude" optional="YES" attributeType="String"/>
+        <attribute name="longitude" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="CDDobDto" representedClassName="CDDobDto" syncable="YES">
+        <attribute name="age" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="date" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="CDIdDto" representedClassName="CDIdDto" syncable="YES">
+        <attribute name="idName" optional="YES" attributeType="String"/>
+        <attribute name="idValue" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="CDInfoDto" representedClassName="CDInfoDto" syncable="YES">
+        <attribute name="page" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="results" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="seed" optional="YES" attributeType="String"/>
+        <attribute name="version" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="CDLocationDto" representedClassName="CDLocationDto" syncable="YES">
+        <attribute name="city" optional="YES" attributeType="String"/>
+        <attribute name="country" optional="YES" attributeType="String"/>
+        <attribute name="postcode" optional="YES" attributeType="String"/>
+        <attribute name="state" optional="YES" attributeType="String"/>
+        <relationship name="coordinates" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CDCoordinatesDto"/>
+        <relationship name="street" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CDStreetDto"/>
+        <relationship name="timezone" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CDTimeDto"/>
+    </entity>
+    <entity name="CDLoginDto" representedClassName="CDLoginDto" syncable="YES">
+        <attribute name="md5" optional="YES" attributeType="String"/>
+        <attribute name="password" optional="YES" attributeType="String"/>
+        <attribute name="salt" optional="YES" attributeType="String"/>
+        <attribute name="sha1" optional="YES" attributeType="String"/>
+        <attribute name="sha256" optional="YES" attributeType="String"/>
+        <attribute name="username" optional="YES" attributeType="String"/>
+        <attribute name="uuid" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="CDNameDto" representedClassName="CDNameDto" syncable="YES">
+        <attribute name="first" optional="YES" attributeType="String"/>
+        <attribute name="last" optional="YES" attributeType="String"/>
+        <attribute name="title" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="CDPictureDto" representedClassName="CDPictureDto" syncable="YES">
+        <attribute name="largeURL" optional="YES" attributeType="String"/>
+        <attribute name="mediumURL" optional="YES" attributeType="String"/>
+        <attribute name="thumbnailURL" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="CdRegisteredDto" representedClassName="CdRegisteredDto" syncable="YES">
+        <attribute name="age" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="date" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="CDResponseDto" representedClassName="CDResponseDto" syncable="YES">
+        <relationship name="info" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CDInfoDto"/>
+        <relationship name="results" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="CDUserDto"/>
+    </entity>
+    <entity name="CDStreetDto" representedClassName="CDStreetDto" syncable="YES">
+        <attribute name="streetName" optional="YES" attributeType="String"/>
+        <attribute name="streetNumber" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+    </entity>
+    <entity name="CDTimeDto" representedClassName="CDTimeDto" syncable="YES">
+        <attribute name="descriptions" optional="YES" attributeType="String"/>
+        <attribute name="offset" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="CDUserDto" representedClassName="CDUserDto" syncable="YES">
+        <attribute name="cell" optional="YES" attributeType="String"/>
+        <attribute name="email" optional="YES" attributeType="String"/>
+        <attribute name="gender" optional="YES" attributeType="String"/>
+        <attribute name="nat" optional="YES" attributeType="String"/>
+        <attribute name="phone" optional="YES" attributeType="String"/>
+        <relationship name="dob" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="CDDobDto"/>
+        <relationship name="id" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="CDIdDto"/>
+        <relationship name="location" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="CDLocationDto"/>
+        <relationship name="login" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="CDLoginDto"/>
+        <relationship name="name" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="CDNameDto"/>
+        <relationship name="picture" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="CDPictureDto"/>
+        <relationship name="registered" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="CdRegisteredDto"/>
+    </entity>
 </model>

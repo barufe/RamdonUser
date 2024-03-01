@@ -1,0 +1,12 @@
+# CocoaPod
+
+Pods/
+Podfile.lock
+*.xcworkspace/
+*.xcuserdata/
+xcuserdata/
+DerivedData/
+build/
+.idea/
+.vscode/
+.DS_Store
