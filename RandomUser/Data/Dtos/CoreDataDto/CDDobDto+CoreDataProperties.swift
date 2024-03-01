@@ -2,7 +2,7 @@
 //  CDDobDto+CoreDataProperties.swift
 //  RandomUser
 //
-//  Created by barufe on 27/02/24.
+//  Created by barufe on 29/02/24.
 //
 //
 
@@ -17,8 +17,7 @@ extension CDDobDto {
     }
 
     @NSManaged public var age: Int16
-    @NSManaged public var date: Date?
-    @NSManaged public var user: CDUserDto?
+    @NSManaged public var date: String?
 
 }
 

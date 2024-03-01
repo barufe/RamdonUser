@@ -8,15 +8,17 @@
 import CoreData
 
 enum CDRequest {
+    static let response = CDResponseDto.fetchRequest()
     static let user = CDUserDto.fetchRequest()
     static let registered = CdRegisteredDto.fetchRequest()
     static let picture = CDPictureDto.fetchRequest()
-    static let nationality = CDNationalityDto.fetchRequest()
     static let name = CDNameDto.fetchRequest()
     static let login = CDLoginDto.fetchRequest()
     static let location = CDLocationDto.fetchRequest()
     static let id = CDIdDto.fetchRequest()
     static let dob = CDDobDto.fetchRequest()
+    static let coordinates = CDCoordinatesDto.fetchRequest()
+    static let info = CDInfoDto.fetchRequest()
 }
 
 class ManagerCoreDataImp {
@@ -45,16 +47,6 @@ class ManagerCoreDataImp {
             }
         }
     }
-    
-    func fetchUser() -> [CDUserDto]{
-        var user = [CDUserDto]()
-        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: CDUserDto.description())
-        do{
-            user = try context.fetch(fetchRequest) as! [CDUserDto]
-        }
-        catch{
-            print("fetching error")
-        }
-        return user
-    }
 }
+
+

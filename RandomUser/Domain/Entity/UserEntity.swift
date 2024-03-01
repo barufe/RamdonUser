@@ -7,6 +7,19 @@
 
 import Foundation
 
+// MARK: - Entity
+struct ResponseEntity {
+    let results: [UserEntity]
+    let info: InfoEntity
+}
+
+// MARK: - Info
+struct InfoEntity {
+    let seed: String
+    let results, page: Int
+    let version: String
+}
+
 // MARK: - User
 struct UserEntity {
     let gender: String
@@ -14,7 +27,8 @@ struct UserEntity {
     let location: LocationEntity
     let email: String
     let login: LoginEntity
-    let dob, registered: DobEntity
+    let dob: DobEntity
+    let registered: RegisteredEntity
     let phone, cell: String
     let id: IDEntity
     let picture: PictureEntity
@@ -23,6 +37,11 @@ struct UserEntity {
 
 // MARK: - Dob
 struct DobEntity {
+    let date: String
+    let age: Int
+}
+
+struct RegisteredEntity {
     let date: String
     let age: Int
 }

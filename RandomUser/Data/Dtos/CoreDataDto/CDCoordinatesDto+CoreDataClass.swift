@@ -2,7 +2,7 @@
 //  CDCoordinatesDto+CoreDataClass.swift
 //  RandomUser
 //
-//  Created by barufe on 28/02/24.
+//  Created by barufe on 29/02/24.
 //
 //
 
