@@ -2,7 +2,7 @@
 //  CDLocationDto+CoreDataProperties.swift
 //  RandomUser
 //
-//  Created by barufe on 27/02/24.
+//  Created by barufe on 29/02/24.
 //
 //
 
@@ -20,11 +20,10 @@ extension CDLocationDto {
     @NSManaged public var country: String?
     @NSManaged public var postcode: String?
     @NSManaged public var state: String?
+    @NSManaged public var coordinates: CDCoordinatesDto?
     @NSManaged public var street: CDStreetDto?
-    @NSManaged public var user: CDUserDto?
-    @NSManaged public var coordinate: CDCoordinatesDto?
-    @NSManaged public var time: CDTimeDto?
-    
+    @NSManaged public var timezone: CDTimeDto?
+
 }
 
 extension CDLocationDto : Identifiable {

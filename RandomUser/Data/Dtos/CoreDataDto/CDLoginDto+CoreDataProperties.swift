@@ -2,7 +2,7 @@
 //  CDLoginDto+CoreDataProperties.swift
 //  RandomUser
 //
-//  Created by barufe on 27/02/24.
+//  Created by barufe on 29/02/24.
 //
 //
 
@@ -23,7 +23,6 @@ extension CDLoginDto {
     @NSManaged public var sha256: String?
     @NSManaged public var username: String?
     @NSManaged public var uuid: String?
-    @NSManaged public var user: CDUserDto?
 
 }
 

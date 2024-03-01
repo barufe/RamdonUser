@@ -2,7 +2,7 @@
 //  CDNameDto+CoreDataProperties.swift
 //  RandomUser
 //
-//  Created by barufe on 27/02/24.
+//  Created by barufe on 29/02/24.
 //
 //
 
@@ -19,7 +19,6 @@ extension CDNameDto {
     @NSManaged public var first: String?
     @NSManaged public var last: String?
     @NSManaged public var title: String?
-    @NSManaged public var user: CDUserDto?
 
 }
 

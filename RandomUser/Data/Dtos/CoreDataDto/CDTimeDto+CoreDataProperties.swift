@@ -2,7 +2,7 @@
 //  CDTimeDto+CoreDataProperties.swift
 //  RandomUser
 //
-//  Created by barufe on 28/02/24.
+//  Created by barufe on 29/02/24.
 //
 //
 
@@ -16,9 +16,8 @@ extension CDTimeDto {
         return NSFetchRequest<CDTimeDto>(entityName: "CDTimeDto")
     }
 
-    @NSManaged public var offset: String?
     @NSManaged public var descriptions: String?
-    @NSManaged public var location: CDLocationDto?
+    @NSManaged public var offset: String?
 
 }
 

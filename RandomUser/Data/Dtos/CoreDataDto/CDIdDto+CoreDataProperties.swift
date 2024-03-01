@@ -2,7 +2,7 @@
 //  CDIdDto+CoreDataProperties.swift
 //  RandomUser
 //
-//  Created by barufe on 27/02/24.
+//  Created by barufe on 29/02/24.
 //
 //
 
@@ -18,7 +18,6 @@ extension CDIdDto {
 
     @NSManaged public var idName: String?
     @NSManaged public var idValue: String?
-    @NSManaged public var user: CDUserDto?
 
 }
 

@@ -2,7 +2,7 @@
 //  CDStreetDto+CoreDataProperties.swift
 //  RandomUser
 //
-//  Created by barufe on 28/02/24.
+//  Created by barufe on 29/02/24.
 //
 //
 
@@ -18,7 +18,6 @@ extension CDStreetDto {
 
     @NSManaged public var streetName: String?
     @NSManaged public var streetNumber: Int16
-    @NSManaged public var location: CDLocationDto?
 
 }
 
